@@ -64,6 +64,16 @@ Generar servicio para comunicacion con el API de DJango
 ng generate service nombre_servicio
 ~~~
 
+Une vez generado el servicio se debe de importar y agregar en app.module.ts
+~~~typescript
+import { SharedService } from './shared.service';//Nombre del servicio
+@NgModule({
+  ...
+  providers: [SharedService],
+  ...
+})
+~~~
+
 ## Consultar version
 Para consultar la version es con el comando 
 ~~~
